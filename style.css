@@ -1,0 +1,44 @@
+ul li{
+  list-style:none;
+  margin:0px 5px;
+  display:inline-block;
+}
+a{
+  text-decoration: none;
+}
+.icon{
+  display:block;
+}
+a:before {
+   font-family: FontAwesome;
+   display: inline-block;
+  text-align: center;
+   vertical-align: middle;
+  background-color:#efefef;
+  padding:10px;
+  font-size:18px;
+  color: #36a477;
+}
+a[href*="github.com"]::before {
+      content: "\f09b";
+}
+a[href*="facebook"]::before {
+      content: "\f09a";
+  padding:10px 12px;
+}
+a[href*="google"]::before {
+      content: "\f1a0";
+}
+a[href*="twitter"]::before {
+      content: "\f099";
+}
+a[href*="instagram"]::before {
+      content: "\f16d";
+}
+
+
+a:hover:before {
+    border-radius: 50%;
+      transition: border-radius 0.4s;
+  color:#11ca7e;
+}
